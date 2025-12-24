@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to bottom, #4a90e2, #ffffff);
+    overflow-x: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+header {
+    background: rgba(0,0,0,0.4);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 2.5em;
+    color: #ff1a75;
+    text-shadow: 2px 2px 5px #000;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffcc00;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #000;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+#surprise {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.snowflake, .heart {
+    position: fixed;
+    top: -10px;
+    z-index: 9999;
+    user-select: none;
+    pointer-events: none;
+    font-size: 1.2em;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+#player {
+    margin: 40px auto;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+#songList {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+
+#songList li {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#songList li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}

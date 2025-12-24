@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christmas Home 🎄</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="notes.html">Notes</a>
+</header>
+
+<h1>Merry Christmas, Motu! 🎄</h1>
+<div id="message">From your Bailatt ❤️</div>
+
+<button onclick="showSurprise('surprise')">Click for Surprise!</button>
+<div id="surprise">🎁 You are my favorite gift! 😘<br>Love, Bailatt 💖</div>
+
+<div id="player">
+<h2>🎶 Playlist</h2>
+<ul id="songList">
+<li onclick="playSong(0)">High On You</li>
+<li onclick="playSong(1)">LIKE FAIRY LIGHTS FOR MY HEART</li>
+<li onclick="playSong(2)">For a Reason</li>
+<li onclick="playSong(3)">SOME PEOPLE FEEL LIKE HOME</li>
+<li onclick="playSong(4)">Dil ka Jo Haal hai</li>
+<li onclick="playSong(5)">WINTER FEELINGS HIT DIFFERENT</li>
+</ul>
+<audio id="audioPlayer" controls autoplay>
+<source src="assets/bgm.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
